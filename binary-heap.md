@@ -7,7 +7,7 @@ A **binary heap** has 2 properties:
 1. uses a *complete* binary tree which means that every level of the tree is full except the bottom level which is filled from left to right 
 2. insertions satisfy the *heap-order-property* which says that no child's priority is less than its parent's priority 
 
-note: the description and solution in this file describe a min-heap but obviously this can all be applied to max-heaps as well
+<sub>note: the description and solution in this file describe a min-heap but obviously this can all be applied to max-heaps as well</sub>
 
 
 Because binary heaps are complete binary trees, they're often stored as arrays in an order that follows a level ordered traversal starting at the root. We could use a pointer and node based data structure for the heap implementation but the array runs faster because we don't have to set and reset references from one node to another.
@@ -18,10 +18,10 @@ If i is the index of an object we can use the following formulas:
     - left child is 2i
     - right child is 2i + 1 
 
-note: these formulas assume you're not using index 0 at all as a way of making indexing nicer 
+<sub>note: these formulas assume you're not using index 0 at all as a way of making indexing nicer</sub>
 
 
-Implement a binary heap with the following 3 methods:
+**Implement a binary heap with the following 3 methods:**
 
 ```javascript
 insert(data, priority) // inserts data into the binary heap with the given priority
